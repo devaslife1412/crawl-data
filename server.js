@@ -1,7 +1,7 @@
 const cheerio = require('cheerio');
 const request = require('request-promise');
 const fs = require('fs');
-
+//get data
 request('https://123job.vn/tuyen-dung', (err, res, req) => {
   if (!err && res.statusCode == 200) {
     const $ = cheerio.load(req);
@@ -21,5 +21,6 @@ request('https://123job.vn/tuyen-dung', (err, res, req) => {
   }
   else {
     console.log(err);
-  }
+  } 
+  //send to telegram
 });

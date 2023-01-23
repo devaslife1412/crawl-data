@@ -1,5 +1,6 @@
 const cheerio = require('cheerio');
 const request = require('request-promise');
+var nodemailer = require('nodemailer');
 const fs = require('fs');
 //get data
 request('https://123job.vn/tuyen-dung', (err, res, req) => {

@@ -22,6 +22,5 @@ request('https://123job.vn/tuyen-dung', (err, res, req) => {
   }
   else {
     console.log(err);
-  } 
-  //send to telegram
+  }
 });
